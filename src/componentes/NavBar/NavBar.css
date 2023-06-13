@@ -3,16 +3,26 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid;
-    background-color: black;
+    background-color: white;
     color: white;
+    margin: 1rem;
 }
 
 li{
+        background-color: sandybrown;
+        color: white;
+        font-size: 1.2rem;
+        width: 8rem;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
     display: inline-block;
     margin: 1rem;
     cursor: pointer;
 }
 
-img.Logo {
+.imgLogo {
     width: 10rem;
 }
+

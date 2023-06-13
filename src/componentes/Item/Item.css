@@ -1,5 +1,6 @@
 .cardProducto {
-    background-color: #bcbd8b;
+    background-color: burlywood;
+    color: black;
     border-radius: 10px;
     width: 15rem;
     padding: 1rem;
@@ -14,11 +15,13 @@
     object-fit: contain;
 }
 
-.btnProducto {
-    background-color: #373d20;
+.btnItem {
+    background-color: sandybrown;
     color: white;
     font-size: 1.2rem;
     width: 8rem;
     border-radius: 10px;
     border: none;
+    text-align: center;
+    text-decoration: none;
 }

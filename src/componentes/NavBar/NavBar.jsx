@@ -4,30 +4,33 @@ import { NavLink, Link } from 'react-router-dom'
 
 
 const NavBar = () => {
-    const imgLogo = "https://i.pinimg.com/originals/8f/88/a5/8f88a50f12ea6ef4e116dc74b9643e12.jpg"
+    const imgLogo = "https://t4.ftcdn.net/jpg/03/57/78/83/360_F_357788345_ZRPnBmklHsMkOYkinPOpl1KaotbzIbEh.jpg"
     return (
         <header>
-            <link to={"/"}>
-                <img className="imgLogo" src={imgLogo} alt=""/>
-            </link>
+            <Link to={"/"}>
+                <img className="imgLogo" src={imgLogo} alt="" />
+            </Link>
+
+
             <nav>
-                <ul>
-<li>
-    <NavLink to={"/categoria/1"}>Perros</NavLink>
-</li>
-<li>
-    <NavLink to={"/categoria/2"}>Gatos</NavLink>
-</li>
-<li>
-    <NavLink to={"/categoria/3"}>Accesorios</NavLink>
-</li>
+                <ul >
+                    <li>
+                        <NavLink className='btnNavPerros' to={"/categoria/1"}>Perros</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className='btnNavGatos' to={"/categoria/2"}>Gatos</NavLink>
+                    </li>
+                    
 
                 </ul>
             </nav>
-<CartWidget/>
+            <CartWidget />
 
         </header>
     )
 }
 
 export default NavBar
+
+
+
